@@ -5,51 +5,51 @@ Welcome to the Autonomous Mobile Robot Navigation repository! This repository co
 ### Contents:
 
 1. **Robot Description Package:**
-   - This package contains the URDF (Unified Robot Description Format) file describing the robot's physical structure.
-   - Gazebo plugins necessary for simulation.
-   - Map files used for navigation.
+- This package contains the URDF (Unified Robot Description Format) file describing the robot's physical structure.
+- Gazebo plugins necessary for simulation.
+- Map files used for navigation.
 
 2. **Gazebo Package:**
-   - Main launch file for starting the Gazebo simulation environment.
+- Main launch file for starting the Gazebo simulation environment.
 
 3. **Navigation Package:**
-   - AMCL (Adaptive Monte Carlo Localization) launch file for localization.
-   - GMapping launch file for SLAM (Simultaneous Localization and Mapping).
-   - Move Base launch file for setting up the navigation stack.
-   - Path planning using A* algorithm for generating optimal paths.
-   - Map files required for navigation.
-   - Configuration files and parameters for fine-tuning navigation behavior.
+- AMCL (Adaptive Monte Carlo Localization) launch file for localization.
+- GMapping launch file for SLAM (Simultaneous Localization and Mapping).
+- Move Base launch file for setting up the navigation stack.
+- Path planning using A* algorithm for generating optimal paths.
+- Map files required for navigation.
+- Configuration files and parameters for fine-tuning navigation behavior.
 
 ### Usage:
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/autonomous-mobile-robot.git
-   ```
+```bash
+git clone https://github.com/yousefh112/autonomous_mobile_robot_ROS_noetic.git
+```
 
 2. **Build the Workspace:**
-   ```bash
-   cd autonomous-mobile-robot
-   catkin_make
-   ```
+```bash
+cd autonomous_mobile_robot_ROS_noetic
+catkin_make
+```
 
 3. **Launch the Gazebo Simulation:**
-   ```bash
-   roslaunch gazebo_pkg launch.launch
-   ```
+```bash
+roslaunch gazebo_pkg launch.launch
+```
 
 4. **Launch Navigation Stack:**
-   - For AMCL localization:
-     ```bash
-     roslaunch navigation_pkg amcl.launch
-     ```
-   - For GMapping SLAM:
-     ```bash
-     roslaunch navigation_pkg gmapping.launch
-     ```
+- For AMCL localization:
+```bash
+roslaunch navigation_pkg amcl.launch
+```
+- For GMapping SLAM:
+```bash
+roslaunch navigation_pkg gmapping.launch
+```
 
 5. **Send Navigation Goal:**
-   Use RViz or any other ROS-compatible tool to send navigation goals to the robot. The robot will autonomously navigate to the specified goal while avoiding obstacles.
+Use RViz or any other ROS-compatible tool to send navigation goals to the robot. The robot will autonomously navigate to the specified goal while avoiding obstacles.
 
 ### Configuration:
 
@@ -67,7 +67,7 @@ The path planning module in this repository utilizes the A* algorithm for genera
 ### The Robot Design:
 ![alt text](4wd_design.png)
 
-### The Freme Tree:
+### The Frame Tree:
 ![alt text](frames.png)
 
 ### Video Of the full Project:
@@ -76,4 +76,3 @@ https://www.youtube.com/watch?v=x-95AC7PFDQ
 ### Issues and Contributions:
 
 If you encounter any issues or have suggestions for improvements, please feel free to open an issue or create a pull request on GitHub. Your contributions are highly appreciated and will help improve the functionality and usability of this autonomous mobile robot navigation system.
-
